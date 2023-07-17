@@ -1,0 +1,22 @@
+---
+title: track.getTopTags
+description: Returns popular tags for a track.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns popular tags for a track._
+
+## Usage
+```ts
+client.track.getTopTags({ artist, track })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| artist | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the artist. |
+| track | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the track. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number

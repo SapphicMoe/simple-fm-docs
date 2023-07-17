@@ -1,0 +1,22 @@
+---
+title: artist.getSimilar
+description: Returns similar artists to this artist.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns similar artists to this artist._
+
+## Usage
+```ts
+client.artist.getSimilar({ artist, limit? })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| artist | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the artist. |
+| limit | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The number of results to fetch per page. Defaults to 30. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number

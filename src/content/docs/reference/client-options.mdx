@@ -1,0 +1,19 @@
+---
+title: Client Options
+description: Available client options for simple-fm.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+```ts
+new SimpleFM(key, { userAgent })
+```
+
+## Options
+| Properties | Type | Required | Description |
+| --- | --- | --- | --- |
+| key | [`key`][key] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | A Last.fm API key. |
+| userAgent | [`string`][string] | <Icon name="close" label="No" color="red" size="1.5rem" /> | Your custom User-Agent header. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[key]: https://www.last.fm/api/account/create 'A Last.fm API key'

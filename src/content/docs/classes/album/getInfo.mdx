@@ -1,0 +1,22 @@
+---
+title: album.getInfo
+description: Returns metadata information for an album.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns metadata information for an album._
+
+## Usage
+```ts
+client.album.getInfo({ artist, album, username? })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| artist | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the artist. |
+| album | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the album. |
+| username | [`string`][string]  | <Icon name="close" label="No" color="red" size="1.5rem" /> | The username for the context of the request. If supplied, the user's playcount for this artist's album is included in the response. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String

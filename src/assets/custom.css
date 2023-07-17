@@ -1,0 +1,10 @@
+
+a:hover {
+  opacity: 0.6;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: .15s;
+}
+
+.content tr:nth-child(2n) {
+  background-color: unset;
+}

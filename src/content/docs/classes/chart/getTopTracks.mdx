@@ -1,0 +1,21 @@
+---
+title: chart.getTopTracks
+description: Returns the most popular tracks.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns the most popular tracks._
+
+## Usage
+```ts
+client.chart.getTopTracks({ limit?, page? })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| limit | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The number of results to fetch per page. Defaults to 30. |
+| page | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The page number to fetch. Defaults to the first page. |
+
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number

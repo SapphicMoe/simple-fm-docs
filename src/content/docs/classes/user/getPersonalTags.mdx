@@ -1,0 +1,22 @@
+---
+title: user.getPersonalTags
+description: Returns a list of the user's personal tags.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns a list of the user's personal tags._
+
+## Usage
+```ts
+client.user.getPersonalTags({ username, tag, tagType })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| username | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the user. |
+| tag | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the tag. |
+| tagType | `album`, `artist`, or `track` | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The type of items which have been tagged. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String

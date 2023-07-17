@@ -1,0 +1,21 @@
+---
+title: album.getTopTags
+description: Returns popular tags for an album.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns popular tags for an album._
+
+## Usage
+```ts
+client.album.getTopTags({ artist, album })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| artist | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the artist. |
+| album | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the album. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String

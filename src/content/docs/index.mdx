@@ -1,0 +1,38 @@
+---
+title: simple-fm
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: A simple, asynchronous Last.fm library written in TypeScript.
+  image:
+    file: ../../../public/favicon.svg
+  actions:
+    - text: Get started
+      link: /guides/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View source code
+      link: https://github.com/solelychloe/simple-fm
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import Footer from '@components/Footer.astro';
+
+## Features
+<CardGrid>
+  <Card title="Fully typed" icon="pencil">
+    Never lose the flow while working on your project. Written in TypeScript and returns Promises.
+  </Card>
+  <Card title="Consistent responses" icon="information">
+    The library will always send a response object that adheres to modern API standards.
+  </Card>
+  <Card title="Easy to use" icon="approve-check-circle">
+    It's as easy as firing up your package manager and using simple-fm in a matter of seconds.
+  </Card>
+  <Card title="Learn more" icon="open-book">
+    Get started with the [simple-fm Docs](/guides/getting-started/)!
+  </Card>
+</CardGrid>
+
+<Footer />

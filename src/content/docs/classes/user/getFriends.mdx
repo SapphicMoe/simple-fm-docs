@@ -1,0 +1,23 @@
+---
+title: user.getFriends
+description: Returns a list of the user's friends.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns a list of the user's friends._
+
+## Usage
+```ts
+client.user.getFriends({ username, limit?, page? })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| username | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the user. |
+| limit | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The number of results to fetch per page. Defaults to 50. |
+| page | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The page number to fetch. Defaults to the first page. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number

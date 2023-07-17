@@ -1,0 +1,76 @@
+---
+title: Getting started
+description: Get started with simple-fm.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Installation
+
+Depending on your choice regarding the package manager, you can run one of the following commands to install simple-fm:
+
+<Tabs>
+  <TabItem label="npm">
+  ```bash
+  # Install simple-fm via npm
+  npm i @solely/simple-fm
+  ```
+  </TabItem>
+  <TabItem label="pnpm">
+  ```bash
+  # Install simple-fm via pnpm
+  pnpm add @solely/simple-fm
+  ```
+  </TabItem>
+  <TabItem label="yarn">
+  ```bash
+  # Install simple-fm via yarn
+  yarn add @solely/simple-fm
+  ```
+  </TabItem>
+</Tabs>
+
+## Usage
+
+:::note
+simple-fm requires you to have a Last.fm API key.  
+If you don't have one already, [visit Last.fm's API page][token] to do so.
+:::
+
+You'll need to import the package first.
+
+<Tabs>
+  <TabItem label="CommonJS">
+  ```ts
+  // Import simple-fm using CommonJS 
+  const SimpleFM = require('@solely/simple-fm');
+  ```
+  </TabItem>
+  <TabItem label="ESM">
+  ```ts
+  // Import simple-fm using ESM
+  import SimpleFM from '@solely/simple-fm';
+  ```
+  </TabItem>
+  <TabItem label="Deno">
+  ```ts
+  // Import simple-fm using Deno 
+  import SimpleFM from 'https://esm.sh/@solely/simple-fm';
+  ```
+  </TabItem>
+</Tabs>
+
+Below is an example code to quickly [fetch recent tracks][getRecentTracks] from a user:
+
+```ts
+const client = new SimpleFM('Your Last.fm API token goes here');
+
+const data = await client.user.getRecentTracks({ username: 'solelychloe' });
+
+console.log(data);
+```
+
+More examples coming soon!
+
+[getRecentTracks]: /classes/user/getRecentTracks 'Read more about fetching recent tracks'  
+[token]: https://www.last.fm/api/account/create 'A redirect link to Last.fm\'s API account creation page'

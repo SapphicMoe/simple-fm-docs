@@ -1,0 +1,27 @@
+{
+  "name": "simple-fm-docs",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Chloe Arciniega <solely@riseup.net>",
+  "license": "zlib",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": "https://github.com/solelychloe/simple-fm-docs",
+  "dependencies": {
+    "@astrojs/starlight": "^0.4.2",
+    "astro": "2.7.0",
+    "sharp": "^0.32.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.45.0",
+    "eslint-config-clarity": "^1.0.3",
+    "prettier": "^2.8.8"
+  }
+}

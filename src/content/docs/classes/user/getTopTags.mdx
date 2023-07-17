@@ -1,0 +1,22 @@
+---
+title: user.getTopTags
+description: Returns a list of all the tags used by the user.
+---
+
+import { Icon } from '@astrojs/starlight/components';
+
+_Returns a list of all the tags used by the user._
+
+## Usage
+```ts
+client.user.getTopTags({ username, limit? })
+```
+
+## Parameters
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| username | [`string`][string] | <Icon name="approve-check" label="Yes" color="limegreen" size="1.5rem" /> | The name of the user. |
+| limit | [`number`][number] | <Icon name="close" label="No" color="red" size="1.5rem" /> | The number of results to fetch per page. Defaults to 50. |
+
+[string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+[number]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
