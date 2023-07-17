@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+const IS_PRODUCTION = import.meta.env.MODE === 'production';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://simple.arciniega.one',
@@ -9,7 +11,7 @@ export default defineConfig({
       title: 'simple-fm',
       logo: {
         alt: 'Headphones with musical notes coming out of it.',
-        src: './public/favicon.svg'
+        src: IS_PRODUCTION ? './favicon.svg' : './public/favicon.svg'
       },
       social: {
         discord: 'https://solstice.tf/discord',
