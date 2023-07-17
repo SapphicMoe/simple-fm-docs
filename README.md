@@ -1,51 +1,28 @@
-# Starlight Starter Kit: Basics
+<div align="center">
+  <a href="https://simple.arciniega.one" title="simple.arciniega.one">
+    <img 
+      src="public/favicon.svg" 
+      height="100"
+      weight="100"
+      alt="Headphones with musical notes coming out of it."
+      title="Headphones with musical notes coming out of it."
+    />
+    <h2>simple-fm docs</h2>
+  </a>
+  <p>
+    Documentation page for <a href="https://github.com/solelychloe/simple-fm">simple-fm</a>.
+  </p>
+  <a href="https://astro.build">
+    <img src="https://astro.badg.es/v1/built-with-astro.svg" alt="Built with Astro" width="150" height="27.5">
+  </a>
+  
+  <br />
+</div>
 
-```
-npm create astro@latest -- --template starlight
-```
+## License
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+This website is licensed under the [zlib][license] license.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+&copy; 2023 Chloe Arciniega.
 
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   │   └── config.ts
-│   └── env.d.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
-
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
-
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
-
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+[license]: https://github.com/solelychloe/simple-fm-docs/blob/main/LICENSE 'zlib License'
