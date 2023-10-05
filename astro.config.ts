@@ -9,6 +9,16 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'simple-fm',
+      head: [
+        {
+          tag: 'script',
+          attrs: {
+            src: 'https://stats.ovy.sh/js/script.js',
+            'data-domain': 'simple.arciniega.one',
+            defer: true
+          }
+        }
+      ],
       logo: {
         alt: 'Headphones with musical notes coming out of it.',
         src: IS_PRODUCTION ? '/favicon.svg' : '/public/favicon.svg'
