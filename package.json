@@ -14,14 +14,14 @@
   },
   "repository": "https://github.com/solelychloe/simple-fm-docs",
   "dependencies": {
-    "@astrojs/starlight": "^0.4.2",
-    "astro": "2.7.0",
-    "sharp": "^0.32.3"
+    "@astrojs/starlight": "^0.10.4",
+    "astro": "^3.2.3",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.45.0",
-    "eslint-config-clarity": "^1.0.3",
-    "prettier": "^2.8.8"
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-clarity": "^1.0.6",
+    "prettier": "^3.0.3"
   }
 }
