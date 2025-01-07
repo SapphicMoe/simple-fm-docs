@@ -1,0 +1,6 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4321:4321"
+    container_name: astro-test

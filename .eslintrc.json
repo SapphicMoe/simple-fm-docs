@@ -1,7 +1,0 @@
-{
-  "extends": "clarity/typescript",
-  "rules": {
-    "import/extensions": "off",
-    "import/no-useless-path-segments": "off"
-  }
-}
